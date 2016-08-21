@@ -52,17 +52,19 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	module.exports = "hi there from module 1";
+	"use strict";
 
+	module.exports = "hi there from module 1";
 
 /***/ },
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var message  = __webpack_require__(1);
+	'use strict';
 
-	document.write(message);
+	var message = __webpack_require__(1);
 
+	document.write('This is formatted with ES6 ' + message);
 
 /***/ }
 /******/ ]);
